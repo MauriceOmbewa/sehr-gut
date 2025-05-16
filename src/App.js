@@ -1,23 +1,14 @@
 import React from "react";
 // import ReactDOM from "react-dom/client";
 import './index.css';
+import Header from './components/header';
 
 export default function App() {
   console.log("🏗️ App is rendering");
   return(
     <div>
 
-      <header>
-        <div className="headercomponents">
-          <div className="headertitle">SehrGut</div>
-          <nav className="headeroptions">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#articles">Articles</a>
-            <a href="#contacts">Contacts</a>
-          </nav>
-        </div>
-      </header> 
+      <Header />
       <section id="home">
         <h1>Welcome to SehrGut</h1>
         <p>This is a simple React application.</p>
