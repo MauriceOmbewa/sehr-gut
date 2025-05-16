@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import ReactDOM from "react-dom/client";
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App() {
+  console.log("🏗️ App is rendering");
+  return(
+    <div>
+
+      <header>
+        <div className="headercomponents">
+          <div className="headertitle">SehrGut</div>
+          <nav className="headeroptions">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#articles">Articles</a>
+            <a href="#contacts">Contacts</a>
+          </nav>
+        </div>
+      </header> 
+      <section id="home">
+        <h1>Welcome to SehrGut</h1>
+        <p>This is a simple React application.</p>
+        <p>Click on the links above to navigate.</p>
+      </section>
+      <section id="about">
+        <h1>About Us</h1>
+        <p>We are a team of passionate developers.</p>
+        <p>We love creating web applications using React.</p>
+      </section>
+      <section id="articles">
+        <h1>Articles</h1>
+        <p>Here are some articles we have written.</p>
+        <p>Stay tuned for more updates!</p>
+      </section>
+      <section id="contacts">
+        You can reach us at:
+        
+        twitter: @sehrgut
+        instagram: @sehrgut
+      </section>
     </div>
   );
 }
-
-export default App;
