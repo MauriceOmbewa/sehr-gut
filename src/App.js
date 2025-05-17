@@ -4,7 +4,7 @@ import './index.css';
 import Header from './components/header';
 
 export default function App() {
-  console.log("🏗️ App is rendering");
+  console.log("App is rendering");
   return(
     <div>
 
